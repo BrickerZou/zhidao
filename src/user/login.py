@@ -286,8 +286,7 @@ def get_local_user(s,lt):
         table.add_row(str(dirs.index(dir) + 1), str(userinfo['login_un']), str(userinfo['name']), str(userinfo['schoolnm']))
     console.rule("本地用户列表", align="center")
     console.print(table)
-    # num = console.input("请输入你要登录的用户序号，添加请输0")
-    num = 1
+    num = console.input("请输入你要登录的用户序号，添加请输0")
     if int(num) == 0:
         usernm, passwd = get_unpw()
     elif int(num) <= len(dirs):
