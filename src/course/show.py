@@ -69,8 +69,7 @@ def show_course(s,detail,usernm):
                       str(data['endtime']),str(exist))
     console.rule("共享课列表", align="center")
     console.print(table)
-    # num = console.input('请输入您要查询的课程序号')
-    num = 1
+    num = console.input('请输入您要查询的课程序号')
     try:
         match = detail[int(num) - 1]
     except Exception as e:
